@@ -102,6 +102,7 @@ export default function ContactPage() {
             </div>
 
             <iframe
+              title="Marketing Mind on Google Maps"
               src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJUc50MDS9oRQR_88K8lBRPis&key=AIzaSyD4gDFO8ehyzN3EHwn4dEIqpte_58eRo3U"
               className="bg-white w-full border rounded"
               style={{height: "500px"}}
