@@ -240,7 +240,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
-      brand: 'Merriweather',
+      brand: ['Merriweather', 'ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       sans: [
         'ui-sans-serif',
         'system-ui',
