@@ -1,17 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import GoogleFontLoader from "react-google-font-loader";
+import NavigationComponent from "./components/NavigationComponent";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import PreviewPage from "./pages/PreviewPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <GoogleFontLoader fonts={[
+        {
+          font: "Merriweather",
+          weights: [300, 400, 700]
+        }
+      ]}/>
+      <NavigationComponent/>
+      <Switch>
+        <Route path="/" exact>
+          <HomePage/>
+        </Route>
+        <Route path="/about" exact>
+          <AboutPage/>
+        </Route>
+        <Route path="/contact" exact>
+          <ContactPage/>
+        </Route>
+        <Route path="/preview" exact>
+          <PreviewPage/>
+        </Route>
+        <Route path="*">
+          <NotFoundPage/>
+        </Route>
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
