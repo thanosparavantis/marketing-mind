@@ -13,7 +13,7 @@ export default function HomePage() {
     <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
       <PageMetaComponent title="Home"/>
       <div className="flex flex-col items-center justify-center">
-        <div className="container max-w-7xl text-justify leading-loose px-3">
+        <div className="container max-w-7xl leading-loose px-3">
           <section className="flex items-center justify-center py-32">
             <img src={logoImg} alt="Marketing Mind" className="h-14 md:h-28"/>
           </section>

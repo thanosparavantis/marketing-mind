@@ -7,7 +7,7 @@ export default function AboutPage() {
     <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
       <PageMetaComponent title="About"/>
       <div className="flex flex-col items-center justify-center">
-        <div className="container max-w-7xl text-justify leading-loose px-3">
+        <div className="container max-w-7xl  leading-loose px-3">
           <section className="flex items-center justify-center py-32">
             <h1 className="text-brand text-7xl font-bold text-brand">
               About

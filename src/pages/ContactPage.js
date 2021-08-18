@@ -2,14 +2,79 @@ import PageMetaComponent from "../components/PageMetaComponent";
 import FooterComponent from "../components/FooterComponent";
 import TextareaAutosize from "react-textarea-autosize";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faPaperPlane} from "@fortawesome/free-solid-svg-icons";
+import {faPaperPlane, faSpinner} from "@fortawesome/free-solid-svg-icons";
+import {useCallback, useState} from "react";
 
 export default function ContactPage() {
+  const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(false)
+  const [error, setError] = useState(false)
+  const [fullName, setFullName] = useState()
+  const [email, setEmail] = useState()
+  const [message, setMessage] = useState()
+
+  const handleFullNameChange = useCallback((event) => {
+    setFullName(event.target.value)
+  }, [])
+
+  const handleEmailChange = useCallback((event) => {
+    setEmail(event.target.value)
+  }, [])
+
+  const handleMessageChange = useCallback((event) => {
+    setMessage(event.target.value)
+  }, [])
+
+  const resetFields = useCallback(() => {
+    setFullName("")
+    setEmail("")
+    setMessage("")
+  }, [])
+
+  const resetStatus = useCallback(() => {
+    setSuccess(false)
+    setError(false)
+  }, [])
+
+  const handleSubmit = useCallback((event) => {
+    event.preventDefault()
+    resetStatus()
+    setLoading(true)
+    const messageWithBreaks = message.replace(/(?:\r\n|\r|\n)/g, "<br />")
+
+    console.debug(messageWithBreaks)
+    fetch("/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: JSON.stringify({
+        "fullname": fullName,
+        "email": email,
+        "message": messageWithBreaks
+      })
+    }).then(response => {
+      console.debug(response)
+
+      if (response.ok) {
+        setSuccess(true)
+        resetFields()
+      } else {
+        setError(true)
+      }
+    }).catch(error => {
+      console.error(error)
+      setError(true)
+    }).finally(() => {
+      setLoading(false)
+    })
+  }, [resetFields, fullName, email, message])
+
   return (
     <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
       <PageMetaComponent title="Contact"/>
       <div className="flex flex-col items-center justify-center">
-        <div className="container max-w-7xl text-justify leading-loose px-3">
+        <div className="container max-w-7xl leading-loose px-3">
           <section className="flex items-center justify-center py-32">
             <h1 className="text-brand text-7xl font-bold">
               Contact
@@ -39,9 +104,9 @@ export default function ContactPage() {
                   Contact form
                 </h1>
                 <form
-                  action="/contact/success"
                   name="contact"
                   method="post"
+                  onSubmit={handleSubmit}
                   className="bg-white border-l border-r border-b rounded-b"
                 >
                   <div className="p-5 md:px-8 md:py-5 flex flex-col">
@@ -58,6 +123,10 @@ export default function ContactPage() {
                       name="fullname"
                       id="fullname"
                       required
+                      disabled={loading}
+                      value={fullName || ""}
+                      onChange={handleFullNameChange}
+                      onFocus={resetStatus}
                       className="px-2 py-1 border rounded text-gray-800 mb-8
                       border-gray-400 focus:outline-none focus:ring-2"
                     />
@@ -72,6 +141,10 @@ export default function ContactPage() {
                       name="email"
                       id="email"
                       required
+                      disabled={loading}
+                      value={email || ""}
+                      onChange={handleEmailChange}
+                      onFocus={resetStatus}
                       className="px-2 py-1 border rounded text-gray-800 mb-8
                       border-gray-400 focus:outline-none focus:ring-2"
                     />
@@ -86,16 +159,40 @@ export default function ContactPage() {
                       name="message"
                       id="message"
                       required
-                      className="px-2 py-1 border rounded text-gray-800
+                      disabled={loading}
+                      value={message || ""}
+                      onChange={handleMessageChange}
+                      onFocus={resetStatus}
+                      className="px-2 py-1 border rounded text-gray-800 leading-normal
                       border-gray-400 resize-none focus:outline-none focus:ring-2"
                     />
+
+                    {success && (
+                      <div className="mt-8 text-sm font-bold text-green-500 text-center">
+                        Your form has been submitted, thank you for contacting us.
+                      </div>
+                    )}
+
+                    {error && (
+                      <div className="mt-8 text-sm font-bold text-red-600 text-center">
+                        Form submission failed, please try again later.
+                      </div>
+                    )}
                   </div>
                   <div className="p-5 md:px-8 md:py-3 bg-white border-t flex items-center justify-center text-center">
-                    <button className="w-full shadow text-white font-bold rounded py-2
-                    bg-green-400 hover:bg-green-500 transition focus:outline-none focus:ring-2">
-                      <FontAwesomeIcon icon={faPaperPlane} className="mr-3"/>
-                      Send
-                    </button>
+                    {loading ? (
+                      <button className="w-full shadow text-white font-bold rounded py-2
+                    bg-blue-500 transition focus:outline-none focus:ring-2 cursor-not-allowed" disabled>
+                        <FontAwesomeIcon icon={faSpinner} spin className="mr-3"/>
+                        Sending...
+                      </button>
+                    ) : (
+                      <button className="w-full shadow text-white font-bold rounded py-2
+                    bg-blue-500 hover:bg-blue-600 transition focus:outline-none focus:ring-2">
+                        <FontAwesomeIcon icon={faPaperPlane} className="mr-3"/>
+                        Send
+                      </button>
+                    )}
                   </div>
                 </form>
               </div>

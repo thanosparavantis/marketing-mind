@@ -7,7 +7,6 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import ContactSuccessPage from "./pages/ContactSuccessPage";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,9 +21,6 @@ ReactDOM.render(
         </Route>
         <Route path="/contact" exact>
           <ContactPage/>
-        </Route>
-        <Route path="/contact/success" exact>
-          <ContactSuccessPage/>
         </Route>
         {/*<Route path="/preview" exact>*/}
         {/*  <PreviewPage/>*/}
