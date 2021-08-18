@@ -8,7 +8,7 @@ export default function NotFoundPage() {
       <PageMetaComponent title="404"/>
       <div className="flex-grow flex flex-col items-center justify-center">
         <div className="container max-w-7xl px-3">
-          <section className="flex flex-col items-center justify-center text-center">
+          <section className="flex flex-col items-center justify-center text-center" style={{minHeight: "calc(100vh - 5rem)"}}>
             <h1 className="text-brand font-bold text-gray-900 mb-8 text-3xl md:text-5xl">
               404
             </h1>
