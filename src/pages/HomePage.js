@@ -13,7 +13,7 @@ export default function HomePage() {
     <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
       <PageMetaComponent title="Home"/>
       <div className="flex flex-col items-center justify-center">
-        <div className="container max-w-7xl leading-loose px-3">
+        <div className="container max-w-7xl px-3">
           <section className="flex items-center justify-center py-32">
             <img src={logoImg} alt="Marketing Mind" className="h-14 md:h-28"/>
           </section>
@@ -22,7 +22,7 @@ export default function HomePage() {
             <h1 className="p-5 md:p-8 text-lg md:text-xl border-b text-brand text-brand text-brand font-bold">
               Mission
             </h1>
-            <p className="p-5 md:px-8 md:py-5 text-gray-900">
+            <p className="p-5 md:px-8 md:py-5 text-gray-900 text-sm md:text-base leading-loose md:leading-loose">
               We work with you to contribute to the success of your business.
               We focus on understanding your special needs and providing the most efficient customized services
               in order to facilitate the achievement of your goals.
@@ -45,7 +45,8 @@ export default function HomePage() {
                    className="object-cover w-full h-64"
               />
 
-              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b">
+              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b
+                              text-sm md:text-base leading-loose md:leading-loose">
                 <h2 className="font-bold text-gray-900">
                   Business Plan
                 </h2>
@@ -55,7 +56,8 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b">
+              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b
+                              text-sm md:text-base leading-loose md:leading-loose">
                 <h2 className="font-bold text-gray-900">
                   Marketing Plan
                 </h2>
@@ -66,7 +68,8 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b">
+              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b
+                              text-sm md:text-base leading-loose md:leading-loose">
                 <h2 className="font-bold text-gray-900">
                   Promotions Design
                 </h2>
@@ -76,7 +79,8 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0">
+              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0
+                              text-sm md:text-base leading-loose md:leading-loose">
                 <h2 className="font-bold text-gray-900">
                   Brochure Design
                 </h2>
@@ -98,7 +102,8 @@ export default function HomePage() {
                    className="object-cover w-full h-64"
               />
 
-              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b">
+              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b
+                              text-sm md:text-base leading-loose md:leading-loose">
                 <h2 className="font-bold text-gray-900">
                   Site Design
                 </h2>
@@ -107,7 +112,8 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b">
+              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b
+                              text-sm md:text-base leading-loose md:leading-loose">
                 <h2 className="font-bold text-gray-900">
                   Social Media Posts
                 </h2>
@@ -117,7 +123,8 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b">
+              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b
+                              text-sm md:text-base leading-loose md:leading-loose">
                 <h2 className="font-bold text-gray-900">
                   Google Search Ads
                 </h2>
@@ -138,7 +145,8 @@ export default function HomePage() {
                    className="object-cover w-full h-64"
               />
 
-              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b">
+              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b
+                              text-sm md:text-base leading-loose md:leading-loose">
                 <h2 className="font-bold text-gray-900">
                   Reports Handling
                 </h2>
@@ -147,7 +155,8 @@ export default function HomePage() {
                   Financial and Sales results, Marketing Activities Analytics, Coordination and Customized reports.
                 </p>
               </div>
-              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b">
+              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b
+                              text-sm md:text-base leading-loose md:leading-loose">
                 <h2 className="font-bold text-gray-900">
                   Secretarial Support
                 </h2>
@@ -168,7 +177,8 @@ export default function HomePage() {
                    className="object-cover w-full h-64"
               />
 
-              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b">
+              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b
+                              text-sm md:text-base leading-loose md:leading-loose">
                 <h2 className="font-bold text-gray-900">
                   Event Management
                 </h2>
@@ -177,7 +187,8 @@ export default function HomePage() {
                   Exhibitions, Congresses, Customer events, Employees Meetings, Annual Events.
                 </p>
               </div>
-              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b">
+              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b
+                              text-sm md:text-base leading-loose md:leading-loose">
                 <h2 className="font-bold text-gray-900">
                   Business Consulting
                 </h2>
@@ -186,7 +197,8 @@ export default function HomePage() {
                   Team Management, Brand Identity development, Strategy Development.
                 </p>
               </div>
-              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b">
+              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0 border-b
+                              text-sm md:text-base leading-loose md:leading-loose">
                 <h2 className="font-bold text-gray-900">
                   Software Development
                 </h2>
@@ -195,7 +207,8 @@ export default function HomePage() {
                   your business needs (applications, programs, automation systems).
                 </p>
               </div>
-              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0">
+              <div className="px-5 md:px-8 flex flex-col justify-center lg:h-40 py-5 lg:py-0
+                              text-sm md:text-base leading-loose md:leading-loose">
                 <h2 className="font-bold text-gray-900">
                   Consulting Environmental Issues
                 </h2>

@@ -77,7 +77,7 @@ export default function ContactPage() {
     <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
       <PageMetaComponent title="Contact"/>
       <div className="flex flex-col items-center justify-center">
-        <div className="container max-w-7xl leading-loose px-3">
+        <div className="container max-w-7xl px-3">
           <section className="flex items-center justify-center py-32">
             <h1 className="text-brand text-7xl font-bold">
               Contact
@@ -96,7 +96,7 @@ export default function ContactPage() {
               <h1 className="p-5 md:p-8 text-brand text-xl font-bold border-b">
                 Get in touch
               </h1>
-              <div className="p-5 md:px-8 md:py-5 text-gray-900">
+              <div className="p-5 md:px-8 md:py-5 text-gray-900 text-sm md:text-base leading-loose md:leading-loose">
                 <p>
                   26 Tositsa Street, 106 83 Athens, Greece
                 </p>
@@ -122,7 +122,7 @@ export default function ContactPage() {
                     <div>
                       <label
                         htmlFor="full-name"
-                        className="block text-gray-900 font-bold cursor-pointer mb-1"
+                        className="block text-gray-900 font-bold cursor-pointer mb-2 text-sm md:text-base"
                       >
                         Full Name
                       </label>
@@ -135,14 +135,14 @@ export default function ContactPage() {
                         value={fullName || ""}
                         onChange={handleFullNameChange}
                         onFocus={resetStatus}
-                        className="w-full px-2 py-1 border rounded text-gray-800
-                      border-gray-400 focus:outline-none focus:ring-2"
+                        className="w-full px-3 py-2 border rounded text-gray-800
+                                   text-sm border-gray-400 focus:outline-none focus:ring-2"
                       />
                     </div>
                     <div>
                       <label
                         htmlFor="email"
-                        className="block text-gray-900 font-bold cursor-pointer mb-1"
+                        className="block text-gray-900 font-bold cursor-pointer mb-2 text-sm md:text-base"
                       >
                         Email Address
                       </label>
@@ -155,14 +155,14 @@ export default function ContactPage() {
                         value={email || ""}
                         onChange={handleEmailChange}
                         onFocus={resetStatus}
-                        className="w-full px-2 py-1 border rounded text-gray-800
-                      border-gray-400 focus:outline-none focus:ring-2"
+                        className="w-full px-3 py-2 border rounded text-gray-800
+                                   text-sm border-gray-400 focus:outline-none focus:ring-2"
                       />
                     </div>
                     <div className="md:col-span-2">
                       <label
                         htmlFor="message"
-                        className="block text-gray-900 font-bold cursor-pointer mb-1"
+                        className="block text-gray-900 font-bold cursor-pointer mb-2 text-sm md:text-base"
                       >
                         Message
                       </label>
@@ -175,8 +175,8 @@ export default function ContactPage() {
                         value={message || ""}
                         onChange={handleMessageChange}
                         onFocus={resetStatus}
-                        className="w-full px-2 py-1 border rounded text-gray-800 leading-normal
-                      border-gray-400 resize-none focus:outline-none focus:ring-2"
+                        className="w-full px-3 py-2 border rounded text-gray-800 leading-normal
+                                   text-sm border-gray-400 resize-none focus:outline-none focus:ring-2"
                       />
                     </div>
                   </div>
@@ -195,14 +195,15 @@ export default function ContactPage() {
                 </div>
                 <div className="p-5 md:px-8 md:py-3 border-t flex items-center justify-center text-center">
                   {loading ? (
-                    <button className="w-full shadow text-white font-bold rounded py-2
-                    bg-blue-500 transition focus:outline-none focus:ring-2 cursor-not-allowed" disabled>
+                    <button className="w-full shadow text-white font-bold rounded py-2 text-sm md:text-base
+                                       bg-blue-500 transition focus:outline-none focus:ring-2 cursor-not-allowed"
+                            disabled>
                       <FontAwesomeIcon icon={faSpinner} spin className="mr-3"/>
                       Sending...
                     </button>
                   ) : (
-                    <button className="w-full shadow text-white font-bold rounded py-2
-                    bg-blue-500 hover:bg-blue-600 transition focus:outline-none focus:ring-2">
+                    <button className="w-full shadow text-white font-bold rounded py-2 text-sm md:text-base
+                                       bg-blue-500 hover:bg-blue-600 transition focus:outline-none focus:ring-2">
                       <FontAwesomeIcon icon={faPaperPlane} className="mr-3"/>
                       Send
                     </button>

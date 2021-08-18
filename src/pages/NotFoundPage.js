@@ -7,16 +7,16 @@ export default function NotFoundPage() {
     <div className="flex flex-col justify-between" style={{minHeight: "calc(100vh - 5rem)"}}>
       <PageMetaComponent title="404"/>
       <div className="flex-grow flex flex-col items-center justify-center">
-        <div className="container max-w-7xl leading-loose px-3">
+        <div className="container max-w-7xl px-3">
           <section className="flex flex-col items-center justify-center text-center">
-            <h1 className="text-brand text-5xl font-bold text-gray-900 mb-8">
+            <h1 className="text-brand font-bold text-gray-900 mb-8 text-3xl md:text-5xl">
               404
             </h1>
-            <p className="mb-5 font-bold text-gray-600">
+            <p className="mb-5 font-bold text-gray-600 text-sm md:text-base">
               The page you requested could not be found.
             </p>
             <Link to="/" className="bg-blue-500 hover:bg-blue-600 transition text-white font-bold
-            rounded shadow px-8 py-2 focus:outline-none focus:ring-2">
+                                    rounded shadow px-8 py-2 focus:outline-none focus:ring-2 text-sm md:text-base">
               Back to Home
             </Link>
           </section>

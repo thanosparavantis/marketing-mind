@@ -7,7 +7,7 @@ export default function AboutPage() {
     <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
       <PageMetaComponent title="About"/>
       <div className="flex flex-col items-center justify-center">
-        <div className="container max-w-7xl  leading-loose px-3">
+        <div className="container max-w-7xl px-3">
           <section className="flex items-center justify-center py-32">
             <h1 className="text-brand text-7xl font-bold text-brand">
               About
@@ -18,28 +18,31 @@ export default function AboutPage() {
                  alt="Maria Mavrommati"
                  className="shadow-lg rounded h-80 object-cover mb-8 lg:mb-0 lg:mr-8"/>
             <div>
-              <h1 className="text-brand text-3xl font-bold mb-5">
+              <h1 className="text-brand font-bold mb-5 text-xl md:text-3xl">
                 Maria Mavrommati
               </h1>
-              <h2 className="font-bold text-gray-900">
-                Owner at Marketing Mind
-              </h2>
-              <p className="text-gray-900">
-                I'm a marketing professional with more than 20 years of experience,
-                passionate to work with all size of businesses to contribute to their success.
-                For this reason, I founded "Marketing Mind" focusing on understanding each
-                business' special needs and providing the most efficient customized services
-                to facilitate the achievement of their goals. Myself and my partners are highly
-                creative in developing the most effective solutions,
-                working with integrity and discipline. Always at your disposal to make your business succeed!
-              </p>
+              <div className="text-sm md:text-base leading-loose md:leading-loose">
+                <h2 className="font-bold text-gray-900">
+                  Owner at Marketing Mind
+                </h2>
+                <p className="text-gray-900">
+                  I'm a marketing professional with more than 20 years of experience,
+                  passionate to work with all size of businesses to contribute to their success.
+                  For this reason, I founded "Marketing Mind" focusing on understanding each
+                  business' special needs and providing the most efficient customized services
+                  to facilitate the achievement of their goals. Myself and my partners are highly
+                  creative in developing the most effective solutions,
+                  working with integrity and discipline. Always at your disposal to make your business succeed!
+                </p>
+              </div>
             </div>
           </main>
           <section className="bg-white border rounded mb-5">
             <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Education
             </h1>
-            <div className="px-5 md:px-8 flex flex-col justify-center py-5 border-b">
+            <div className="px-5 md:px-8 flex flex-col justify-center py-5 border-b
+                            text-sm md:text-base leading-loose md:leading-loose">
               <h2 className="font-bold text-gray-900">
                 1995 - 1997
               </h2>
@@ -47,7 +50,8 @@ export default function AboutPage() {
                 University of LaVerne, Master in Business Administration (MBA) (GPA 3.64)
               </p>
             </div>
-            <div className="px-5 md:px-8 flex flex-col justify-center py-5">
+            <div className="px-5 md:px-8 flex flex-col justify-center py-5
+                            text-sm md:text-base leading-loose md:leading-loose">
               <h2 className="font-bold text-gray-900">
                 1991 - 1994
               </h2>
@@ -60,7 +64,8 @@ export default function AboutPage() {
             <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Work Experience
             </h1>
-            <div className="px-5 md:px-8 flex flex-col justify-center py-5 border-b">
+            <div className="px-5 md:px-8 flex flex-col justify-center py-5 border-b
+                            text-sm md:text-base leading-loose md:leading-loose">
               <h2 className="font-bold text-gray-900">
                 Jun. 2020 - Today
               </h2>
@@ -70,7 +75,8 @@ export default function AboutPage() {
                 administrative support, fundamental marketing support, business coaching.
               </p>
             </div>
-            <div className="px-5 md:px-8 flex flex-col justify-center py-5 border-b">
+            <div className="px-5 md:px-8 flex flex-col justify-center py-5 border-b
+                            text-sm md:text-base leading-loose md:leading-loose">
               <h2 className="font-bold text-gray-900">
                 Jul. 1997 - Sep. 2019
               </h2>
@@ -94,7 +100,8 @@ export default function AboutPage() {
                 <li>Sales representation of Athens and western Greece</li>
               </ul>
             </div>
-            <div className="px-5 md:px-8 flex flex-col justify-center py-5 border-b">
+            <div className="px-5 md:px-8 flex flex-col justify-center py-5 border-b
+                            text-sm md:text-base leading-loose md:leading-loose">
               <h2 className="font-bold text-gray-900">
                 Oct. 1996 - Jan. 1999
               </h2>
@@ -104,7 +111,8 @@ export default function AboutPage() {
                 tutoring in Business Administration courses, teaching university-level business courses in English)
               </p>
             </div>
-            <div className="px-5 md:px-8 flex flex-col justify-center py-5">
+            <div className="px-5 md:px-8 flex flex-col justify-center py-5
+                            text-sm md:text-base leading-loose md:leading-loose">
               <h2 className="font-bold text-gray-900">
                 Feb. 1995 - Nov. 1995
               </h2>
@@ -115,7 +123,7 @@ export default function AboutPage() {
               </p>
             </div>
           </section>
-          <section className="bg-white border rounded mb-5">
+          <section className="bg-white border rounded mb-5 text-sm md:text-base leading-loose md:leading-loose">
             <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Continuing Education
             </h1>
@@ -128,7 +136,7 @@ export default function AboutPage() {
               </p>
             </div>
           </section>
-          <section className="bg-white border rounded mb-5">
+          <section className="bg-white border rounded mb-5 text-sm md:text-base leading-loose md:leading-loose">
             <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Awards
             </h1>
@@ -149,7 +157,8 @@ export default function AboutPage() {
             <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Languages
             </h1>
-            <div className="px-5 md:px-8 text-gray-700 flex flex-col justify-center py-5">
+            <div className="px-5 md:px-8 text-gray-700 flex flex-col justify-center py-5
+                            text-sm md:text-base leading-loose md:leading-loose">
               <p>
                 Fluency in English and Greek, working knowledge in French.
               </p>
@@ -159,7 +168,8 @@ export default function AboutPage() {
             <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Computer skills
             </h1>
-            <div className="px-5 md:px-8 text-gray-700 flex flex-col justify-center py-5">
+            <div className="px-5 md:px-8 text-gray-700 flex flex-col justify-center py-5
+                            text-sm md:text-base leading-loose md:leading-loose">
               <p>
                 Windows, Office, Minitab, Outlook, WEBII, Salesforce.
               </p>
@@ -169,7 +179,8 @@ export default function AboutPage() {
             <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Extracurricular activities
             </h1>
-            <div className="px-5 md:px-8 text-gray-700 flex flex-col justify-center py-5">
+            <div className="px-5 md:px-8 text-gray-700 flex flex-col justify-center py-5
+                            text-sm md:text-base leading-loose md:leading-loose">
               <p>
                 Cooking, food blogging, travelling.
               </p>
@@ -179,7 +190,8 @@ export default function AboutPage() {
             <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               References
             </h1>
-            <div className="px-5 md:px-8 text-gray-700 flex flex-col justify-center py-5">
+            <div className="px-5 md:px-8 text-gray-700 flex flex-col justify-center py-5
+                            text-sm md:text-base leading-loose md:leading-loose">
               <p>
                 Available upon request.
               </p>

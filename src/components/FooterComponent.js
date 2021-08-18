@@ -16,8 +16,8 @@ export default function FooterComponent() {
               <img src={shortLogoImage} alt="Marketing Mind" className="hover:opacity-90 h-14"/>
             </Link>
           </div>
-          <div className="flex flex-col items-center justify-center text-center">
-            <p>
+          <div className="flex flex-col items-center justify-center text-center text-sm md:text-base">
+            <p className="mb-1">
               &copy; {year} Marketing Mind
             </p>
             <p>
