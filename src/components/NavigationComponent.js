@@ -55,7 +55,7 @@ export default function NavigationComponent() {
           </NavLink>
         </div>
 
-        <button className="ml-auto block md:hidden" onClick={toggleOpenState}>
+        <button className="ml-auto block md:hidden" onClick={toggleOpenState} aria-label="Toggle navigation menu">
           <div className="h-20 px-5 flex items-center justify-center text-center">
             <FontAwesomeIcon icon={opened ? faTimes : faBars} size="lg"/>
           </div>
