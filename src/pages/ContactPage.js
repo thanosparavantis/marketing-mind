@@ -54,7 +54,7 @@ export default function ContactPage() {
       },
       body: encode({
         "form-name": "contact",
-        "fullname": fullName,
+        "full-name": fullName,
         "email": email,
         "message": message
       })
@@ -121,15 +121,15 @@ export default function ContactPage() {
                   <div className="grid md:grid-cols-2 gap-5">
                     <div>
                       <label
-                        htmlFor="fullname"
+                        htmlFor="full-name"
                         className="block text-gray-900 font-bold cursor-pointer mb-1"
                       >
                         Full Name
                       </label>
                       <input
                         type="text"
-                        name="fullname"
-                        id="fullname"
+                        name="full-name"
+                        id="full-name"
                         required
                         disabled={loading}
                         value={fullName || ""}
