@@ -68,7 +68,7 @@ export default function ContactPage() {
     }).finally(() => {
       setLoading(false)
     })
-  }, [resetFields, fullName, email, message])
+  }, [resetStatus, resetFields, fullName, email, message])
 
   return (
     <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
@@ -114,7 +114,7 @@ export default function ContactPage() {
 
                     <label
                       htmlFor="fullname"
-                      className="font-bold cursor-pointer mb-1"
+                      className="text-gray-900 font-bold cursor-pointer mb-1"
                     >
                       Full Name
                     </label>
@@ -132,7 +132,7 @@ export default function ContactPage() {
                     />
                     <label
                       htmlFor="email"
-                      className="font-bold cursor-pointer mb-1"
+                      className="text-gray-900 font-bold cursor-pointer mb-1"
                     >
                       Email Address
                     </label>
@@ -150,7 +150,7 @@ export default function ContactPage() {
                     />
                     <label
                       htmlFor="message"
-                      className="font-bold cursor-pointer mb-1"
+                      className="text-gray-900 font-bold cursor-pointer mb-1"
                     >
                       Message
                     </label>
