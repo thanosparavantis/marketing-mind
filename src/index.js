@@ -6,8 +6,8 @@ import NavigationComponent from "./components/NavigationComponent";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import PreviewPage from "./pages/PreviewPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import ContactSuccessPage from "./pages/ContactSuccessPage";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,9 +23,12 @@ ReactDOM.render(
         <Route path="/contact" exact>
           <ContactPage/>
         </Route>
-        <Route path="/preview" exact>
-          <PreviewPage/>
+        <Route path="/contact/success" exact>
+          <ContactSuccessPage/>
         </Route>
+        {/*<Route path="/preview" exact>*/}
+        {/*  <PreviewPage/>*/}
+        {/*</Route>*/}
         <Route path="*">
           <NotFoundPage/>
         </Route>

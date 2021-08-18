@@ -4,16 +4,16 @@ import FooterComponent from "../components/FooterComponent";
 
 export default function AboutPage() {
   return (
-    <div className="h-screen flex flex-col justify-between">
+    <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
       <PageMetaComponent title="About"/>
       <div className="flex flex-col items-center justify-center">
-        <div className="container max-w-7xl text-justify leading-loose px-5">
+        <div className="container max-w-7xl text-justify leading-loose px-3">
           <section className="flex items-center justify-center py-32">
             <h1 className="text-brand text-7xl font-bold text-brand">
               About
             </h1>
           </section>
-          <main className="flex flex-col lg:flex-row justify-center bg-white p-8 border mb-5">
+          <main className="p-5 md:p-8 flex flex-col lg:flex-row justify-center bg-white border mb-5">
             <img src={mariaMavrommatiImg}
                  alt="Maria Mavrommati"
                  className="shadow-lg rounded h-80 object-cover mb-8 lg:mb-0 lg:mr-8"/>
@@ -36,10 +36,10 @@ export default function AboutPage() {
             </div>
           </main>
           <section className="bg-white border rounded mb-5">
-            <h1 className="p-8 text-brand text-brand text-brand text-xl font-bold border-b">
+            <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Education
             </h1>
-            <div className="px-8 flex flex-col justify-center py-5 border-b">
+            <div className="px-5 md:px-8 flex flex-col justify-center py-5 border-b">
               <h2 className="font-bold text-gray-900">
                 1995 - 1997
               </h2>
@@ -47,7 +47,7 @@ export default function AboutPage() {
                 University of LaVerne, Master in Business Administration (MBA) (GPA 3.64)
               </p>
             </div>
-            <div className="px-8 flex flex-col justify-center py-5">
+            <div className="px-5 md:px-8 flex flex-col justify-center py-5">
               <h2 className="font-bold text-gray-900">
                 1991 - 1994
               </h2>
@@ -57,10 +57,10 @@ export default function AboutPage() {
             </div>
           </section>
           <section className="bg-white border rounded mb-5">
-            <h1 className="p-8 text-brand text-brand text-brand text-xl font-bold border-b">
+            <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Work Experience
             </h1>
-            <div className="px-8 flex flex-col justify-center py-5 border-b">
+            <div className="px-5 md:px-8 flex flex-col justify-center py-5 border-b">
               <h2 className="font-bold text-gray-900">
                 Jun. 2020 - Today
               </h2>
@@ -70,7 +70,7 @@ export default function AboutPage() {
                 administrative support, fundamental marketing support, business coaching.
               </p>
             </div>
-            <div className="px-8 flex flex-col justify-center py-5 border-b">
+            <div className="px-5 md:px-8 flex flex-col justify-center py-5 border-b">
               <h2 className="font-bold text-gray-900">
                 Jul. 1997 - Sep. 2019
               </h2>
@@ -94,7 +94,7 @@ export default function AboutPage() {
                 <li>Sales representation of Athens and western Greece</li>
               </ul>
             </div>
-            <div className="px-8 flex flex-col justify-center py-5 border-b">
+            <div className="px-5 md:px-8 flex flex-col justify-center py-5 border-b">
               <h2 className="font-bold text-gray-900">
                 Oct. 1996 - Jan. 1999
               </h2>
@@ -104,7 +104,7 @@ export default function AboutPage() {
                 tutoring in Business Administration courses, teaching university-level business courses in English)
               </p>
             </div>
-            <div className="px-8 flex flex-col justify-center py-5">
+            <div className="px-5 md:px-8 flex flex-col justify-center py-5">
               <h2 className="font-bold text-gray-900">
                 Feb. 1995 - Nov. 1995
               </h2>
@@ -116,10 +116,10 @@ export default function AboutPage() {
             </div>
           </section>
           <section className="bg-white border rounded mb-5">
-            <h1 className="p-8 text-brand text-brand text-brand text-xl font-bold border-b">
+            <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Continuing Education
             </h1>
-            <div className="px-8 flex flex-col justify-center py-5">
+            <div className="px-5 md:px-8 flex flex-col justify-center py-5">
               <h2 className="font-bold text-gray-900">
                 Dec. 1999
               </h2>
@@ -129,10 +129,10 @@ export default function AboutPage() {
             </div>
           </section>
           <section className="bg-white border rounded mb-5">
-            <h1 className="p-8 text-brand text-brand text-brand text-xl font-bold border-b">
+            <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Awards
             </h1>
-            <div className="px-8 flex flex-col justify-center py-5">
+            <div className="p-5 md:px-8 flex flex-col justify-center py-5">
               <ul className="text-gray-700 list-disc list-inside">
                 <li>Jul. 1999 3M Hellas Limited, Spot recognition for ISO 9002/EN 46002 certification</li>
                 <li>Jan. 2001 3M Hellas Limited, Acropolis award for total contribution to the company</li>
@@ -146,40 +146,40 @@ export default function AboutPage() {
             </div>
           </section>
           <section className="bg-white border rounded mb-5">
-            <h1 className="p-8 text-brand text-brand text-brand text-xl font-bold border-b">
+            <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Languages
             </h1>
-            <div className="text-gray-700 px-8 flex flex-col justify-center py-5">
+            <div className="px-5 md:px-8 text-gray-700 flex flex-col justify-center py-5">
               <p>
                 Fluency in English and Greek, working knowledge in French.
               </p>
             </div>
           </section>
           <section className="bg-white border rounded mb-5">
-            <h1 className="p-8 text-brand text-brand text-brand text-xl font-bold border-b">
+            <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Computer skills
             </h1>
-            <div className="text-gray-700 px-8 flex flex-col justify-center py-5">
+            <div className="px-5 md:px-8 text-gray-700 flex flex-col justify-center py-5">
               <p>
                 Windows, Office, Minitab, Outlook, WEBII, Salesforce.
               </p>
             </div>
           </section>
           <section className="bg-white border rounded mb-5">
-            <h1 className="p-8 text-brand text-brand text-brand text-xl font-bold border-b">
+            <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               Extracurricular activities
             </h1>
-            <div className="text-gray-700 px-8 flex flex-col justify-center py-5">
+            <div className="px-5 md:px-8 text-gray-700 flex flex-col justify-center py-5">
               <p>
                 Cooking, food blogging, travelling.
               </p>
             </div>
           </section>
           <section className="bg-white border rounded mb-5">
-            <h1 className="p-8 text-brand text-brand text-brand text-xl font-bold border-b">
+            <h1 className="p-5 md:p-8 text-brand text-brand text-brand text-xl font-bold border-b">
               References
             </h1>
-            <div className="text-gray-700 px-8 flex flex-col justify-center py-5">
+            <div className="px-5 md:px-8 text-gray-700 flex flex-col justify-center py-5">
               <p>
                 Available upon request.
               </p>

@@ -6,23 +6,23 @@ import {faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 
 export default function ContactPage() {
   return (
-    <div className="h-screen flex flex-col justify-between">
+    <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
       <PageMetaComponent title="Contact"/>
       <div className="flex flex-col items-center justify-center">
-        <div className="container max-w-7xl text-justify leading-loose px-5">
+        <div className="container max-w-7xl text-justify leading-loose px-3">
           <section className="flex items-center justify-center py-32">
             <h1 className="text-brand text-7xl font-bold">
               Contact
             </h1>
           </section>
 
-          <section className="grid lg:grid-cols-2 gap-5 mb-5">
+          <main className="grid lg:grid-cols-2 gap-5 mb-5">
             <div>
               <div>
-                <h1 className="bg-white text-brand text-xl font-bold p-8 border rounded-t">
+                <h1 className="p-5 md:p-8 bg-white text-brand text-xl font-bold border rounded-t">
                   Get in touch
                 </h1>
-                <div className="bg-white px-8 py-5 text-gray-900 border-l border-r border-b rounded-b mb-5">
+                <div className="p-5 md:px-8 md:py-5 bg-white text-gray-900 border-l border-r border-b rounded-b mb-5">
                   <p>
                     26 Tositsa Street, 106 83 Athens, Greece
                   </p>
@@ -35,15 +35,16 @@ export default function ContactPage() {
                 </div>
               </div>
               <div>
-                <h1 className="bg-white text-brand text-xl font-bold p-8 border rounded-t">
+                <h1 className="p-5 md:p-8 bg-white text-brand text-xl font-bold border rounded-t">
                   Contact form
                 </h1>
                 <form
+                  action="/contact/success"
                   name="contact"
                   method="post"
                   className="bg-white border-l border-r border-b rounded-b"
                 >
-                  <div className="flex flex-col px-8 py-5">
+                  <div className="p-5 md:px-8 md:py-5 flex flex-col">
                     <input type="hidden" name="form-name" value="contact"/>
 
                     <label
@@ -89,10 +90,9 @@ export default function ContactPage() {
                       border-gray-400 resize-none focus:outline-none focus:ring-2"
                     />
                   </div>
-                  <div className="bg-white px-8 py-3 border-t flex items-center justify-center text-center">
+                  <div className="p-5 md:px-8 md:py-3 bg-white border-t flex items-center justify-center text-center">
                     <button className="w-full shadow text-white font-bold rounded py-2
-                    bg-green-400 hover:bg-green-500 focus:outline-none focus:ring-2
-                    disabled:opacity-50 disabled:cursor-not-allowed">
+                    bg-green-400 hover:bg-green-500 transition focus:outline-none focus:ring-2">
                       <FontAwesomeIcon icon={faPaperPlane} className="mr-3"/>
                       Send
                     </button>
@@ -109,12 +109,10 @@ export default function ContactPage() {
               loading="lazy"
               allowFullScreen
             />
-          </section>
-
+          </main>
         </div>
       </div>
       <FooterComponent/>
     </div>
-
   )
 }
