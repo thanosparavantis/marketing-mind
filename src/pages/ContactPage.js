@@ -36,6 +36,12 @@ export default function ContactPage() {
     setError(false)
   }, [])
 
+  const encode = useCallback((data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }, [])
+
   const handleSubmit = useCallback((event) => {
     event.preventDefault()
     resetStatus()
@@ -48,7 +54,8 @@ export default function ContactPage() {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded"
       },
-      body: JSON.stringify({
+      body: encode({
+        "form-name": "contact",
         "fullname": fullName,
         "email": email,
         "message": messageWithBreaks
@@ -110,62 +117,68 @@ export default function ContactPage() {
                   className="bg-white border-l border-r border-b rounded-b"
                 >
                   <div className="p-5 md:px-8 md:py-5 flex flex-col">
-                    <input type="hidden" name="form-name" value="contact"/>
-
-                    <label
-                      htmlFor="fullname"
-                      className="text-gray-900 font-bold cursor-pointer mb-1"
-                    >
-                      Full Name
-                    </label>
-                    <input
-                      type="text"
-                      name="fullname"
-                      id="fullname"
-                      required
-                      disabled={loading}
-                      value={fullName || ""}
-                      onChange={handleFullNameChange}
-                      onFocus={resetStatus}
-                      className="px-2 py-1 border rounded text-gray-800 mb-8
+                    <div className="grid md:grid-cols-2 gap-5">
+                      <div>
+                        <label
+                          htmlFor="fullname"
+                          className="block text-gray-900 font-bold cursor-pointer mb-1"
+                        >
+                          Full Name
+                        </label>
+                        <input
+                          type="text"
+                          name="fullname"
+                          id="fullname"
+                          required
+                          disabled={loading}
+                          value={fullName || ""}
+                          onChange={handleFullNameChange}
+                          onFocus={resetStatus}
+                          className="w-full px-2 py-1 border rounded text-gray-800
                       border-gray-400 focus:outline-none focus:ring-2"
-                    />
-                    <label
-                      htmlFor="email"
-                      className="text-gray-900 font-bold cursor-pointer mb-1"
-                    >
-                      Email Address
-                    </label>
-                    <input
-                      type="text"
-                      name="email"
-                      id="email"
-                      required
-                      disabled={loading}
-                      value={email || ""}
-                      onChange={handleEmailChange}
-                      onFocus={resetStatus}
-                      className="px-2 py-1 border rounded text-gray-800 mb-8
+                        />
+                      </div>
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="block text-gray-900 font-bold cursor-pointer mb-1"
+                        >
+                          Email Address
+                        </label>
+                        <input
+                          type="text"
+                          name="email"
+                          id="email"
+                          required
+                          disabled={loading}
+                          value={email || ""}
+                          onChange={handleEmailChange}
+                          onFocus={resetStatus}
+                          className="w-full px-2 py-1 border rounded text-gray-800
                       border-gray-400 focus:outline-none focus:ring-2"
-                    />
-                    <label
-                      htmlFor="message"
-                      className="text-gray-900 font-bold cursor-pointer mb-1"
-                    >
-                      Message
-                    </label>
-                    <TextareaAutosize
-                      minRows="4"
-                      name="message"
-                      id="message"
-                      required
-                      disabled={loading}
-                      value={message || ""}
-                      onChange={handleMessageChange}
-                      onFocus={resetStatus}
-                      className="px-2 py-1 border rounded text-gray-800 leading-normal
+                        />
+                      </div>
+                      <div className="md:col-span-2">
+                        <label
+                          htmlFor="message"
+                          className="block text-gray-900 font-bold cursor-pointer mb-1"
+                        >
+                          Message
+                        </label>
+                        <TextareaAutosize
+                          minRows="4"
+                          name="message"
+                          id="message"
+                          required
+                          disabled={loading}
+                          value={message || ""}
+                          onChange={handleMessageChange}
+                          onFocus={resetStatus}
+                          className="w-full px-2 py-1 border rounded text-gray-800 leading-normal
                       border-gray-400 resize-none focus:outline-none focus:ring-2"
-                    />
+                        />
+                      </div>
+                    </div>
 
                     {success && (
                       <div className="mt-8 text-sm font-bold text-green-500 text-center">
