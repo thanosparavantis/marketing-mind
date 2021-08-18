@@ -46,9 +46,7 @@ export default function ContactPage() {
     event.preventDefault()
     resetStatus()
     setLoading(true)
-    const messageWithBreaks = message.replace(/(?:\r\n|\r|\n)/g, "<br />")
 
-    console.debug(messageWithBreaks)
     fetch("/contact", {
       method: "POST",
       headers: {
@@ -58,11 +56,9 @@ export default function ContactPage() {
         "form-name": "contact",
         "fullname": fullName,
         "email": email,
-        "message": messageWithBreaks
+        "message": message
       })
     }).then(response => {
-      console.debug(response)
-
       if (response.ok) {
         setSuccess(true)
         resetFields()
