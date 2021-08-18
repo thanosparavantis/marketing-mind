@@ -79,7 +79,7 @@ export default function ContactPage() {
       <div className="flex flex-col items-center justify-center">
         <div className="container max-w-7xl px-3">
           <section className="flex items-center justify-center py-32">
-            <h1 className="text-brand text-7xl font-bold">
+            <h1 className="text-brand text-5xl md:text-7xl font-bold">
               Contact
             </h1>
           </section>
