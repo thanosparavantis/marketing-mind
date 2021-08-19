@@ -3,13 +3,7 @@ import fundamentalMarketingImg from "../images/fundamental-marketing.jpg"
 import digitalMarketingImg from "../images/digital-marketing.jpg"
 import administrativeSupportImg from "../images/administrative-support.jpg"
 import addedValueServicesImg from "../images/added-value-services.jpg"
-import {
-  faArrowRight,
-  faChartLine,
-  faEnvelopeOpenText,
-  faHandHoldingUsd,
-  faLaptop
-} from "@fortawesome/free-solid-svg-icons";
+import {faChartLine, faEnvelopeOpenText, faHandHoldingUsd, faLaptop} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import MetaTags from "../components/MetaTags";
 import FooterComponent from "../components/FooterComponent";
