@@ -5,13 +5,15 @@ import administrativeSupportImg from "../images/administrative-support.jpg"
 import addedValueServicesImg from "../images/added-value-services.jpg"
 import {faChartLine, faEnvelopeOpenText, faHandHoldingUsd, faLaptop} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import PageMetaComponent from "../components/PageMetaComponent";
+import MetaTags from "../components/MetaTags";
 import FooterComponent from "../components/FooterComponent";
 
 export default function HomePage() {
   return (
     <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
-      <PageMetaComponent title="Home"/>
+      <MetaTags
+        title="Home"
+      />
       <div className="flex flex-col items-center justify-center">
         <div className="container max-w-7xl px-3">
           <section className="flex items-center justify-center py-32">

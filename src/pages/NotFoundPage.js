@@ -1,11 +1,11 @@
 import FooterComponent from "../components/FooterComponent";
-import PageMetaComponent from "../components/PageMetaComponent";
+import MetaTags from "../components/MetaTags";
 import {Link} from "react-router-dom";
 
 export default function NotFoundPage() {
   return (
     <div className="flex flex-col justify-between" style={{minHeight: "calc(100vh - 5rem)"}}>
-      <PageMetaComponent title="404"/>
+      <MetaTags title="404"/>
       <div className="flex-grow flex flex-col items-center justify-center">
         <div className="container max-w-7xl px-3">
           <section className="flex flex-col items-center justify-center text-center" style={{minHeight: "calc(100vh - 5rem)"}}>

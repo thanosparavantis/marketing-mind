@@ -1,11 +1,15 @@
 import mariaMavrommatiImg from "../images/maria-mavrommati.jpg"
-import PageMetaComponent from "../components/PageMetaComponent";
+import MetaTags from "../components/MetaTags";
 import FooterComponent from "../components/FooterComponent";
 
 export default function AboutPage() {
   return (
     <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
-      <PageMetaComponent title="About"/>
+      <MetaTags
+        title="About"
+        description="Maria Mavrommati, owner of Marketing Mind,
+                     is a marketing professional with more than 20 years of experience."
+      />
       <div className="flex flex-col items-center justify-center">
         <div className="container max-w-7xl px-3">
           <section className="flex items-center justify-center py-32">
@@ -31,8 +35,8 @@ export default function AboutPage() {
                   For this reason, I founded "Marketing Mind" focusing on understanding each
                   business' special needs and providing the most efficient customized services
                   to facilitate the achievement of their goals. Myself and my partners are highly
-                  creative in developing the most effective solutions,
-                  working with integrity and discipline. Always at your disposal to make your business succeed!
+                  creative in developing the most effective solutions, working with integrity and discipline.
+                  Always at your disposal to make your business succeed!
                 </p>
               </div>
             </div>

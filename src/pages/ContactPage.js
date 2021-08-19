@@ -1,4 +1,4 @@
-import PageMetaComponent from "../components/PageMetaComponent";
+import MetaTags from "../components/MetaTags";
 import FooterComponent from "../components/FooterComponent";
 import TextareaAutosize from "react-textarea-autosize";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -75,7 +75,10 @@ export default function ContactPage() {
 
   return (
     <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
-      <PageMetaComponent title="Contact"/>
+      <MetaTags
+        title="Contact"
+        description="Get in touch and let us work together to contribute to the success of your business."
+      />
       <div className="flex flex-col items-center justify-center">
         <div className="container max-w-7xl px-3">
           <section className="flex items-center justify-center py-32">
