@@ -81,13 +81,13 @@ export default function ContactPage() {
       />
       <div className="flex flex-col items-center justify-center">
         <div className="container max-w-7xl px-3">
-          <section className="flex items-center justify-center py-32">
+          <header className="flex items-center justify-center py-32">
             <h1 className="text-brand text-5xl md:text-7xl font-bold">
               Contact
             </h1>
-          </section>
+          </header>
 
-          <main className="grid lg:grid-cols-2 gap-5 mb-5">
+          <main className="grid lg:grid-cols-2 gap-5 lg:mb-5">
             <iframe
               title="Marketing Mind on Google Maps"
               src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJUc50MDS9oRQR_88K8lBRPis&key=AIzaSyD4gDFO8ehyzN3EHwn4dEIqpte_58eRo3U"
@@ -95,22 +95,26 @@ export default function ContactPage() {
               loading="lazy"
               allowFullScreen
             />
-            <div className="bg-white border rounded">
+
+            <section className="bg-white border rounded">
               <h1 className="p-5 md:p-8 text-brand text-xl font-bold border-b">
                 Get in touch
               </h1>
-              <div className="p-5 md:px-8 md:py-5 text-gray-900 text-sm md:text-base leading-loose md:leading-loose">
+              <address className="not-italic p-5 md:px-8 md:py-5 text-gray-900 text-sm md:text-base leading-loose md:leading-loose">
                 <p>
                   26 Tositsa Street, 106 83 Athens, Greece
                 </p>
                 <p>
-                  +30 210 3844423<span className="mx-3">&middot;</span>+30 698 2929653
+                  <a href="tel:+302103844423" className="underline">+30 210 3844423</a>
+                  <span className="mx-3">&middot;</span>
+                  <a href="tel:+306982929653" className="underline">+30 698 2929653</a>
                 </p>
                 <p>
                   <a href="mailto:contact@marketingmind.gr" className="underline">contact@marketingmind.gr</a>
                 </p>
-              </div>
-            </div>
+              </address>
+            </section>
+
             <div className="bg-white border rounded">
               <h1 className="p-5 md:p-8 text-brand text-xl font-bold border-b">
                 Contact form
@@ -205,7 +209,7 @@ export default function ContactPage() {
                       Sending...
                     </button>
                   ) : (
-                    <button className="w-full shadow text-white font-bold rounded py-2 text-sm md:text-base
+                    <button className="w-full shadow text-white font-bold rounded py-3 text-sm md:text-base
                                        bg-blue-500 hover:bg-blue-600 transition focus:outline-none focus:ring-2">
                       <FontAwesomeIcon icon={faPaperPlane} className="mr-3"/>
                       Send

@@ -12,11 +12,11 @@ export default function AboutPage() {
       />
       <div className="flex flex-col items-center justify-center">
         <div className="container max-w-7xl px-3">
-          <section className="flex items-center justify-center py-32">
+          <header className="flex items-center justify-center py-32">
             <h1 className="text-brand text-5xl md:text-7xl font-bold text-brand">
               About
             </h1>
-          </section>
+          </header>
           <main className="p-5 md:p-8 flex flex-col lg:flex-row justify-center bg-white border mb-5">
             <img src={mariaMavrommatiImg}
                  alt="Maria Mavrommati"

@@ -3,10 +3,17 @@ import fundamentalMarketingImg from "../images/fundamental-marketing.jpg"
 import digitalMarketingImg from "../images/digital-marketing.jpg"
 import administrativeSupportImg from "../images/administrative-support.jpg"
 import addedValueServicesImg from "../images/added-value-services.jpg"
-import {faChartLine, faEnvelopeOpenText, faHandHoldingUsd, faLaptop} from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faChartLine,
+  faEnvelopeOpenText,
+  faHandHoldingUsd,
+  faLaptop
+} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import MetaTags from "../components/MetaTags";
 import FooterComponent from "../components/FooterComponent";
+import {Link} from "react-router-dom";
 
 export default function HomePage() {
   return (
@@ -16,9 +23,9 @@ export default function HomePage() {
       />
       <div className="flex flex-col items-center justify-center">
         <div className="container max-w-7xl px-3">
-          <section className="flex items-center justify-center py-32">
+          <header className="flex items-center justify-center py-32">
             <img src={logoImg} alt="Marketing Mind" className="h-14 md:h-28"/>
-          </section>
+          </header>
 
           <main className="mb-5 bg-white border rounded">
             <h1 className="p-5 md:p-8 text-lg md:text-xl border-b text-brand text-brand text-brand font-bold">
@@ -35,6 +42,7 @@ export default function HomePage() {
               based on your business special needs. Your success is our business.
             </p>
           </main>
+
           <div className="grid lg:grid-cols-2 gap-5 mb-5">
             <section className="bg-white border rounded">
               <h1 className="p-5 md:p-8 text-brand text-xl font-bold">
@@ -220,6 +228,22 @@ export default function HomePage() {
               </div>
             </section>
           </div>
+
+          <section className="text-center bg-white border rounded px-5 md:px-8 py-32 mb-5">
+            <h1 className="text-xl md:text-3xl font-bold mb-5 text-brand">
+              Let's work, together
+            </h1>
+            <p className="mb-10 text-gray-700 text-sm md:text-base leading-loose">
+              We provide the most efficient customized services to facilitate the achievement of your goals.
+            </p>
+            <p>
+              <Link to="/contact" className="bg-red-500 hover:bg-red-600 transition text-white font-bold lg:text-lg
+                                             rounded shadow px-5 py-3 md:px-20 md:py-4 focus:outline-none focus:ring-2">
+                <FontAwesomeIcon icon={faEnvelopeOpenText} className="mr-3"/>
+                Get in touch
+              </Link>
+            </p>
+          </section>
         </div>
       </div>
       <FooterComponent/>
