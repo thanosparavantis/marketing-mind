@@ -101,25 +101,27 @@ export default function ContactPage() {
                 Get in touch
               </h1>
               <address className="not-italic p-5 md:px-8 md:py-5 text-gray-900 text-sm md:text-base leading-loose md:leading-loose">
-                <h2 className="font-bold">
-                  Address:
+                <h2 className="font-bold text-gray-900">
+                  Address
                 </h2>
-                <p className="mb-3">
+                <p className="mb-3 text-gray-700">
                   26 Tositsa Street, 106 83 Athens, Greece
                 </p>
-                <h2 className="font-bold">
-                  Telephone:
+                <h2 className="font-bold text-gray-900">
+                  Telephone
                 </h2>
-                <p className="mb-3">
+                <p className="mb-3 text-gray-700">
                   <a href="tel:+302103844423" className="underline">+30 210 3844423</a>
                   <span className="mx-3">&middot;</span>
                   <a href="tel:+306982929653" className="underline">+30 698 2929653</a>
                 </p>
-                <h2 className="font-bold">
-                  Email Address:
+                <h2 className="font-bold text-gray-900">
+                  Email Address
                 </h2>
-                <p>
-                  <a href="mailto:contact@marketingmind.gr" className="underline">contact@marketingmind.gr</a>
+                <p className="text-gray-700">
+                  <a href="mailto:contact@marketingmind.gr" className="underline">
+                    contact@marketingmind.gr
+                  </a>
                 </p>
               </address>
             </section>
