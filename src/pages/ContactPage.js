@@ -111,9 +111,15 @@ export default function ContactPage() {
                   Telephone
                 </h2>
                 <p className="mb-3 text-gray-700">
-                  <a href="tel:+302103844423" className="underline">+30 210 3844423</a>
-                  <span className="mx-3">&middot;</span>
-                  <a href="tel:+306982929653" className="underline">+30 698 2929653</a>
+                  <a href="tel:+302103844423" className="underline">
+                    +30 210 3844423
+                  </a>
+                  <span className="mx-3">
+                    &middot;
+                  </span>
+                  <a href="tel:+306982929653" className="underline">
+                    +30 698 2929653
+                  </a>
                 </p>
                 <h2 className="font-bold text-gray-900">
                   Email Address
@@ -126,7 +132,7 @@ export default function ContactPage() {
               </address>
             </section>
 
-            <div className="bg-white border rounded">
+            <section className="bg-white border rounded">
               <h1 className="p-5 md:p-8 text-brand text-xl font-bold border-b">
                 Contact form
               </h1>
@@ -228,7 +234,7 @@ export default function ContactPage() {
                   )}
                 </div>
               </form>
-            </div>
+            </section>
           </main>
         </div>
       </div>
