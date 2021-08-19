@@ -11,6 +11,7 @@ export default function MetaTags({title = null, description = null}) {
       <body className="font-brand bg-gray-100"/>
       <title>{metaTitle}</title>
       <meta name="title" content={metaTitle}/>
+      <meta name="description" content={metaDesc}/>
       <meta property="og:url" content={metaUrl}/>
       <meta property="og:title" content={metaTitle}/>
       <meta property="og:description" content={metaDesc}/>
