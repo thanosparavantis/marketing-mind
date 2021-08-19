@@ -87,7 +87,7 @@ export default function ContactPage() {
             </h1>
           </header>
 
-          <main className="grid lg:grid-cols-2 gap-5 lg:mb-5">
+          <main className="grid lg:grid-cols-2 gap-5 mb-5">
             <iframe
               title="Marketing Mind on Google Maps"
               src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJUc50MDS9oRQR_88K8lBRPis&key=AIzaSyD4gDFO8ehyzN3EHwn4dEIqpte_58eRo3U"
@@ -101,14 +101,23 @@ export default function ContactPage() {
                 Get in touch
               </h1>
               <address className="not-italic p-5 md:px-8 md:py-5 text-gray-900 text-sm md:text-base leading-loose md:leading-loose">
-                <p>
+                <h2 className="font-bold">
+                  Address:
+                </h2>
+                <p className="mb-3">
                   26 Tositsa Street, 106 83 Athens, Greece
                 </p>
-                <p>
+                <h2 className="font-bold">
+                  Telephone:
+                </h2>
+                <p className="mb-3">
                   <a href="tel:+302103844423" className="underline">+30 210 3844423</a>
                   <span className="mx-3">&middot;</span>
                   <a href="tel:+306982929653" className="underline">+30 698 2929653</a>
                 </p>
+                <h2 className="font-bold">
+                  Email Address:
+                </h2>
                 <p>
                   <a href="mailto:contact@marketingmind.gr" className="underline">contact@marketingmind.gr</a>
                 </p>
