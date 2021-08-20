@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
       <MetaTags
-        title="Home"
+        title="Adding value to marketing activities"
       />
       <div className="flex flex-col items-center justify-center">
         <div className="container max-w-7xl px-3">

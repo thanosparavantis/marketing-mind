@@ -2,7 +2,7 @@ import {Helmet} from "react-helmet";
 
 export default function MetaTags({title = null, description = null}) {
   const metaUrl = window.location.href
-  const metaTitle = title ? `${title} - Marketing Mind` : "Marketing Mind"
+  const metaTitle = title ? `Marketing Mind - ${title}` : "Marketing Mind"
   const metaDesc = description ||
     "Our marketing consultancy agency offers integrated marketing solutions based on your business special needs."
 
