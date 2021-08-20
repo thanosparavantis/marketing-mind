@@ -18,7 +18,11 @@ export default function HomePage() {
       <div className="flex flex-col items-center justify-center">
         <div className="container max-w-7xl px-3">
           <header className="flex items-center justify-center py-32">
-            <img src={logoImg} alt="Marketing Mind" className="h-14 md:h-28"/>
+            <img src={logoImg}
+                 title="Marketing Mind - Adding value to marketing activities"
+                 alt="The logo of Marketing Mind"
+                 className="h-14 md:h-28"
+            />
           </header>
 
           <main className="mb-5 bg-white border rounded">
@@ -45,7 +49,8 @@ export default function HomePage() {
               </h1>
 
               <img src={fundamentalMarketingImg}
-                   alt="Fundamental Marketing section"
+                   title="Fundamental Marketing section banner"
+                   alt="People brainstorming and writing down new ideas"
                    className="object-cover w-full h-64"
               />
 
@@ -102,7 +107,8 @@ export default function HomePage() {
               </h1>
 
               <img src={digitalMarketingImg}
-                   alt="Digital Marketing section"
+                   title="Digital Marketing section banner"
+                   alt="Corporate office space with two people discussing in the background"
                    className="object-cover w-full h-64"
               />
 
@@ -145,7 +151,8 @@ export default function HomePage() {
               </h1>
 
               <img src={administrativeSupportImg}
-                   alt="Administrative Support section"
+                   title="Administrative Support section banner"
+                   alt="A person sitting and writing on their keyboard in front of a computer"
                    className="object-cover w-full h-64"
               />
 
@@ -177,7 +184,8 @@ export default function HomePage() {
               </h1>
 
               <img src={addedValueServicesImg}
-                   alt="Added Value Services section"
+                   title="Added Value Services section banner"
+                   alt="A tablet sitting on a desk displaying website analytics"
                    className="object-cover w-full h-64"
               />
 

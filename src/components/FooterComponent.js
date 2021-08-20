@@ -13,7 +13,11 @@ export default function FooterComponent() {
         <div className="grid lg:grid-cols-3 gap-10 md:gap-0">
           <div className="flex items-center justify-center lg:justify-start">
             <Link to="/">
-              <img src={shortLogoImage} alt="Marketing Mind" className="hover:opacity-90 h-14"/>
+              <img src={shortLogoImage}
+                   title="Marketing Mind - Adding value to marketing activities"
+                   alt="Marketing Mind footer logo"
+                   className="hover:opacity-90 h-14"
+              />
             </Link>
           </div>
           <div className="flex flex-col items-center justify-center text-center text-sm md:text-base">

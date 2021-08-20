@@ -7,7 +7,7 @@ export default function AboutPage() {
     <div className="flex flex-col justify-between" style={{minHeight: "100vh"}}>
       <MetaTags
         title="About"
-        description="Maria Mavrommati, owner of Marketing Mind,
+        description="Maria Mavrommati, owner at Marketing Mind,
                      is a marketing professional with more than 20 years of experience."
       />
       <div className="flex flex-col items-center justify-center">
@@ -19,7 +19,8 @@ export default function AboutPage() {
           </header>
           <main className="p-5 md:p-8 flex flex-col lg:flex-row justify-center bg-white border mb-5">
             <img src={mariaMavrommatiImg}
-                 alt="Maria Mavrommati"
+                 title="Maria Mavrommati - Owner at Marketing Mind"
+                 alt="Photo of Maria Mavrommati, owner at Marketing Mind"
                  className="shadow-lg rounded h-80 object-cover mb-8 lg:mb-0 lg:mr-8"/>
             <div>
               <h1 className="text-brand font-bold mb-5 text-xl md:text-3xl">

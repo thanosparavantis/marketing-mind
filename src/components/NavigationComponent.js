@@ -26,7 +26,11 @@ export default function NavigationComponent() {
     <nav className="sticky top-0 left-0 right-0 flex items-center justify-center h-20 bg-brand shadow-lg">
       <div className="container max-w-7xl flex items-center px-5 text-white font-bold">
         <Link to="/">
-          <img src={shortLogoImage} alt="Marketing Mind navigation logo" className="hover:opacity-90 h-12"/>
+          <img src={shortLogoImage}
+               title="Marketing Mind - Adding value to marketing activities"
+               alt="Marketing Mind navigation logo"
+               className="hover:opacity-90 h-12"
+          />
         </Link>
         <div className="ml-auto hidden md:flex md:items-center md:justify-center">
           <NavLink to="/"
