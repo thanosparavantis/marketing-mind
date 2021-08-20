@@ -20,7 +20,7 @@ export default function AboutPage() {
           <main className="p-5 md:p-8 flex flex-col lg:flex-row justify-center bg-white border mb-5">
             <img src={mariaMavrommatiImg}
                  title="Maria Mavrommati, owner at Marketing Mind"
-                 alt="Maria Mavrommati, owner at Marketing Mind"
+                 alt="Maria Mavrommati"
                  className="shadow-lg rounded h-80 object-cover mb-8 lg:mb-0 lg:mr-8"/>
             <div>
               <h1 className="text-brand font-bold mb-5 text-xl md:text-3xl">
