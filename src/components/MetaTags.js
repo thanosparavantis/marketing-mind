@@ -5,6 +5,7 @@ export default function MetaTags({title = null, description = null}) {
   const metaTitle = title ? `Marketing Mind - ${title}` : "Marketing Mind"
   const metaDesc = description ||
     "Our marketing consultancy agency offers integrated marketing solutions based on your business special needs."
+  const metaImage = "https://www.marketingmind.gr/preview.png"
 
   return (
     <Helmet>
@@ -12,12 +13,16 @@ export default function MetaTags({title = null, description = null}) {
       <title>{metaTitle}</title>
       <meta name="title" content={metaTitle}/>
       <meta name="description" content={metaDesc}/>
+      <meta property="og:type" content="website"/>
       <meta property="og:url" content={metaUrl}/>
       <meta property="og:title" content={metaTitle}/>
       <meta property="og:description" content={metaDesc}/>
+      <meta property="og:image" content={metaImage}/>
+      <meta property="twitter:card" content="summary_large_image"/>
       <meta property="twitter:url" content={metaUrl}/>
       <meta property="twitter:title" content={metaTitle}/>
       <meta property="twitter:description" content={metaDesc}/>
+      <meta property="twitter:image" content={metaImage}/>
     </Helmet>
   )
 }
