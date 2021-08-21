@@ -23,7 +23,7 @@ export default function NavigationComponent() {
   }, [opened])
 
   return (
-    <nav className="sticky top-0 left-0 right-0 flex items-center justify-center h-20 bg-brand shadow-lg">
+    <nav className="flex items-center justify-center h-20 bg-brand shadow-lg">
       <div className="container max-w-7xl flex items-center px-5 text-white font-bold">
         <Link to="/">
           <img src={shortLogoImage}
