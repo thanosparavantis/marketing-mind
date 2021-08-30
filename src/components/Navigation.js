@@ -28,7 +28,7 @@ export default function Navigation() {
         <Link to="/">
           <img src={shortLogoImage}
                title="Marketing Mind - Adding value to marketing activities"
-               alt=""
+               alt="Marketing Mind"
                className="hover:opacity-90 h-12"
           />
         </Link>
