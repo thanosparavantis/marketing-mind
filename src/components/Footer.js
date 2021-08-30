@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {useMemo} from "react";
 
-export default function FooterComponent() {
+export default function Footer() {
   const year = useMemo(() => new Date().getFullYear(), [])
 
   return (

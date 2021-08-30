@@ -1,5 +1,5 @@
 import MetaTags from "../components/MetaTags";
-import FooterComponent from "../components/FooterComponent";
+import Footer from "../components/Footer";
 import TextareaAutosize from "react-textarea-autosize";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPaperPlane, faSpinner} from "@fortawesome/free-solid-svg-icons";
@@ -238,7 +238,7 @@ export default function ContactPage() {
           </main>
         </div>
       </div>
-      <FooterComponent/>
+      <Footer/>
     </div>
   )
 }

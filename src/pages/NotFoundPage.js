@@ -1,4 +1,4 @@
-import FooterComponent from "../components/FooterComponent";
+import Footer from "../components/Footer";
 import MetaTags from "../components/MetaTags";
 import {Link} from "react-router-dom";
 
@@ -24,7 +24,7 @@ export default function NotFoundPage() {
         </div>
       </div>
       <div>
-        <FooterComponent/>
+        <Footer/>
       </div>
     </div>
   )

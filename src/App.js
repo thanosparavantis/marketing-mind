@@ -1,17 +1,16 @@
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import NavigationComponent from "./components/NavigationComponent";
+import Navigation from "./components/Navigation";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import React from "react";
-import ScrollToTop from "./components/ScrollToTopComponent";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
-
   return (
     <BrowserRouter>
-      <NavigationComponent/>
+      <Navigation/>
       <ScrollToTop/>
       <Switch>
         <Route path="/" exact>
@@ -28,6 +27,5 @@ export default function App() {
         </Route>
       </Switch>
     </BrowserRouter>
-
   )
 }

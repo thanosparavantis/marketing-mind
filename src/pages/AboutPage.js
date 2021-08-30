@@ -1,6 +1,6 @@
 import mariaMavrommatiImg from "../images/maria-mavrommati.jpg"
 import MetaTags from "../components/MetaTags";
-import FooterComponent from "../components/FooterComponent";
+import Footer from "../components/Footer";
 
 export default function AboutPage() {
   return (
@@ -204,7 +204,7 @@ export default function AboutPage() {
           </section>
         </div>
       </div>
-      <FooterComponent/>
+      <Footer/>
     </div>
   )
 }

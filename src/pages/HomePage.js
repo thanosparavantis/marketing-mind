@@ -6,7 +6,7 @@ import addedValueServicesImg from "../images/added-value-services.jpg"
 import {faChartLine, faEnvelopeOpenText, faHandHoldingUsd, faLaptop} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import MetaTags from "../components/MetaTags";
-import FooterComponent from "../components/FooterComponent";
+import Footer from "../components/Footer";
 import {Link} from "react-router-dom";
 
 export default function HomePage() {
@@ -248,7 +248,7 @@ export default function HomePage() {
           </section>
         </div>
       </div>
-      <FooterComponent/>
+      <Footer/>
     </div>
   )
 }

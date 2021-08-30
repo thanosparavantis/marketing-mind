@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
 import {useCallback, useEffect, useMemo, useState} from "react";
 
-export default function NavigationComponent() {
+export default function Navigation() {
   const [opened, setOpened] = useState(false)
   const year = useMemo(() => new Date().getFullYear(), [])
 
@@ -28,7 +28,7 @@ export default function NavigationComponent() {
         <Link to="/">
           <img src={shortLogoImage}
                title="Marketing Mind - Adding value to marketing activities"
-               alt="Marketing Mind navigation logo"
+               alt=""
                className="hover:opacity-90 h-12"
           />
         </Link>
