@@ -19,6 +19,8 @@ export default function AboutPage() {
           </header>
           <main className="p-5 md:p-8 flex flex-col lg:flex-row justify-center bg-white border mb-5">
             <img src={mariaMavrommatiImg}
+                 width="800"
+                 height="800"
                  title="Maria Mavrommati, owner at Marketing Mind"
                  alt="Maria Mavrommati"
                  className="shadow-lg rounded h-80 object-cover mb-8 lg:mb-0 lg:mr-8"/>

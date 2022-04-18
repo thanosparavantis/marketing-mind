@@ -49,6 +49,8 @@ export default function HomePage() {
               </h1>
 
               <img src={fundamentalMarketingImg}
+                   width="1280"
+                   height="853"
                    title="Fundamental Marketing section banner"
                    alt="People brainstorming and writing down new ideas"
                    className="object-cover w-full h-64"
@@ -107,6 +109,8 @@ export default function HomePage() {
               </h1>
 
               <img src={digitalMarketingImg}
+                   width="1280"
+                   height="847"
                    title="Digital Marketing section banner"
                    alt="Corporate office space with two people discussing in the background"
                    className="object-cover w-full h-64"
@@ -151,6 +155,8 @@ export default function HomePage() {
               </h1>
 
               <img src={administrativeSupportImg}
+                   width="1280"
+                   height="854"
                    title="Administrative Support section banner"
                    alt="A person sitting and writing on their keyboard in front of a computer"
                    className="object-cover w-full h-64"
@@ -184,6 +190,8 @@ export default function HomePage() {
               </h1>
 
               <img src={addedValueServicesImg}
+                   width="1280"
+                   height="853"
                    title="Added Value Services section banner"
                    alt="A tablet sitting on a desk displaying website analytics"
                    className="object-cover w-full h-64"

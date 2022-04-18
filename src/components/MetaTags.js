@@ -11,6 +11,7 @@ export default function MetaTags({title = null, description = null}) {
     <Helmet>
       <body className="font-brand bg-gray-100"/>
       <title>{metaTitle}</title>
+      <link rel="canonical" href={metaUrl}/>
       <meta name="title" content={metaTitle}/>
       <meta name="description" content={metaDesc}/>
       <meta property="og:type" content="website"/>
