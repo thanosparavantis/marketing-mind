@@ -101,7 +101,7 @@ export default function AboutPage() {
                 </li>
                 <li>Quality Control</li>
                 <li>Internal audits of ISO9002/EN46002 quality systems</li>
-                <li>Imports discrepancies handling -shortages, overages, wrong shipments-, quality problems
+                <li>Imports discrepancies handling shortages, overages, wrong shipments, quality problems
                   management, repairs' handling for visual and medical products
                 </li>
                 <li>Sales representation of Athens and western Greece</li>
