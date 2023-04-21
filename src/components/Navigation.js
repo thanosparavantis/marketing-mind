@@ -1,4 +1,4 @@
-import shortLogoImage from "../images/logo-short.png";
+import brandLogo from "../images/logo-one-line.png";
 import {Link, NavLink} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
@@ -24,12 +24,17 @@ export default function Navigation() {
 
   return (
     <nav className="flex items-center justify-center h-20 bg-brand shadow-lg">
-      <div className="container max-w-7xl flex items-center px-5 text-white font-bold">
+      <div className="container max-w-7xl flex items-center md:px-5 text-white font-bold">
+        <button className="block md:hidden" onClick={toggleOpenState} aria-label="Toggle navigation menu">
+          <div className="h-20 px-5 flex items-center justify-center text-center">
+            <FontAwesomeIcon icon={opened ? faTimes : faBars} size="lg"/>
+          </div>
+        </button>
         <Link to="/">
-          <img src={shortLogoImage}
+          <img src={brandLogo}
                title="Marketing Mind - Adding value to marketing activities"
-               alt="Marketing Mind"
-               className="hover:opacity-90 h-12"
+               alt="Logo of Marketing Mind"
+               className="hover:opacity-90 md:h-8 h-6"
           />
         </Link>
         <div className="ml-auto hidden md:flex md:items-center md:justify-center">
@@ -58,12 +63,6 @@ export default function Navigation() {
             Contact
           </NavLink>
         </div>
-
-        <button className="ml-auto block md:hidden" onClick={toggleOpenState} aria-label="Toggle navigation menu">
-          <div className="h-20 px-5 flex items-center justify-center text-center">
-            <FontAwesomeIcon icon={opened ? faTimes : faBars} size="lg"/>
-          </div>
-        </button>
 
         {opened && (
           <div
